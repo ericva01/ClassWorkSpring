@@ -26,7 +26,7 @@ public class ClassWorkApplication {
 
 			System.out.println("=".repeat(10)+ "Find Student By ID"+ "=".repeat(10));
 			studentService.getStudentById(3).ifPresent(System.out::println);
-//
+
 			System.out.println("=".repeat(10)+ "Update Student By Id"+ "=".repeat(10));
 			Students updatedStudent = new Students(1,"Wen Hao Ran",80.0,"Male");
 			boolean update =  studentService.updateStudent(1,updatedStudent);
@@ -35,7 +35,7 @@ public class ClassWorkApplication {
 			System.out.println("=".repeat(10)+ "Delete Student By ID"+ "=".repeat(10));
 			boolean deleteStudent = studentService.deleteStudent(3);
 			System.out.println("Deleted Student: "+ deleteStudent +"Successfully");
-//
+
 		};
 	}
 }
